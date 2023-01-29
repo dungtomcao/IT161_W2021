@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    padding: 20px;
+}
+
+.card {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 23%;
+    float: left;
+  }
+
+  .card_row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  .aside {
+    float: left;
+    width: 30%;
+    }
+    
+  .main {
+    float: left;
+    width: 60%;
+    }
+    /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;      
+    clear: both;
+    }
+    .main_cart {
+      float: left;
+      width: 60%;
+    }
+    .aside_cart {
+      float: left;
+      width: 30%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    width: 30%;
+    float: left;
+  }
+
+  .card_row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .aside {
+      float: left;
+      width: 30%;
+      }
+      
+    .main {
+      float: left;
+      width: 60%;
+      }
+      /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;      
+      clear: both;
+      }
+
+      .main_cart {
+        float: left;
+        width: 60%;
+      }
+      .aside_cart {
+        float: left;
+        width: 30%;
+      }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 45%;
+    float: left;
+  }
+
+  .card_row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .aside,.main, .main_cart, .aside_cart {
+      width: 95%;
+      }
+}
+
+@media screen and (min-width: 677px) {
+  .overlay-content, .cart {
+    display: content;
+    float: right;
+    padding-top: 32px;
+  }
+
+  .cart {padding-right: 30px; color:#53435a;}
+  .overlay-content a {
+    padding: 15px;
+    color:#53435a;
+    text-decoration: none;
+  }
+
+  .menu, .closebtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .phone {
+    display: none;
+  }
+  .desktop {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .phone {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    float: left;
+  }
+  .card_row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@media screen and (max-height: 1200px) and (max-width: 678px) {
+
+ /* The Overlay (background) */
+ .overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: #53435a; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #e4d090;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 23px;
+    right: 64px;
+    font-size: 30px;
+  }
+  
+.menu {
+  display: contents;
+}
+
+.fa {
+  float: right;
+  padding-top: 32px;
+  padding-right: 25px;
+}
+
+}
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+  } 
+
+  /* Clear floats after the columns */
+  header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #53435a;
+    color: #e4d090;
+    padding: 20px;
+  }
+
+  footer p, footer p small a {
+    color: #e4d090;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .card_img {
+    width: 100%;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  div {
+    padding-bottom: 10px;
+  }
+
+  .wrapper_careers {
+    margin: 20px;
+  }
+
+  form {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  table, th, td {
+    padding: 10px;
+  }
+
+  .main_cart, .aside_cart {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  th {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+
+  .checkout {
+    width: 100%;
+padding: 20px;
+margin-top: 20px;
+color: white;
+background: blue;
+border: none;
+  }
+
+  input[type="submit"]{
+    width: 98%;
+    padding: 20px;
+    color: white;
+    background: darkblue;
+  }
+
+  .add {
+    width: 100%;
+padding: 10px;
+margin-top: 10px;
+color: black;
+background: orange;
+border: none;
+  }
+
+  .quantity {
+    max-width: 3em;
+  }
+
+  select {
+    width: 100%;
+text-align: center;
+border: 1px solid black;
+padding: 10px;
+  }
+
+input[type="text"], input[type="email"], textarea {
+  width: 95%;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
+  border-color: white;
+}
+
+.rc-anchor-light {
+  background: white;
+}
+
+.rc-anchor-normal {
+  height: 100%;
+  width: 100%;
+}
+
+.card_img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.card_img {
+  transition: transform .2s;
+}
