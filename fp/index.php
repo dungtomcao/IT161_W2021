@@ -3,8 +3,8 @@ include('includes/config.php');
 include('includes/header.php'); ?>
 
 <div class='wrapper'>
-    <img class="desktop" src="images/osgcbanner.png" alt="One Starfish Greeting Cards banner"></img>
-    <img class="phone" src="images/banner_phone.png" alt="One Starfish Greeting Cards banner"></img>
+    <img class="desktop" src="images/osgcbanner.png" alt="One Starfish Greeting Cards banner">
+    <img class="phone" src="images/banner_phone.png" alt="One Starfish Greeting Cards banner">
     <div class="row">
     <aside class="aside">
     <h1>We are One Starfish Greeting Cards.</h1>
@@ -15,4 +15,5 @@ include('includes/header.php'); ?>
 </div>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php 
+include('includes/footer.php'); ?>

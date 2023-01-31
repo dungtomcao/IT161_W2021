@@ -23,4 +23,5 @@ include('includes/header.php'); ?>
     </aside>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php 
+include('includes/footer.php'); ?>
